@@ -1,0 +1,105 @@
+Feature: SignUp Amricanwell
+
+  @tag6
+  Scenario: Test signup Americanwell        [90m# SignUp.feature:4[0m
+    [31mGiven [0m[31mI open browser[0m                    [90m# SignUpTest.i_open_browser()[0m
+      [31morg.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:11115
+      Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+      System info: host: 'DESKTOP-C3UG4MO', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+      Driver info: driver.version: EdgeDriver
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
+      	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+      	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+      	at sTepDefination.SignUpTest.i_open_browser(SignUpTest.java:34)
+      	at ✽.Given I open browser(SignUp.feature:5)
+      Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:11115
+      	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+      	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+      	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+      	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+      	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+      	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+      	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+      	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+      	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+      	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+      	at okhttp3.RealCall.execute(RealCall.java:77)
+      	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+      	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+      	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
+      	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+      	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+      	at sTepDefination.SignUpTest.i_open_browser(SignUpTest.java:34)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+      	at java.lang.reflect.Method.invoke(Unknown Source)
+      	at cucumber.runtime.Utils$1.call(Utils.java:37)
+      	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+      	at cucumber.runtime.Utils.invoke(Utils.java:31)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+      	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+      	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+      	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+      Caused by: java.net.ConnectException: Connection refused: connect
+      	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+      	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+      	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+      	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+      	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+      	at java.net.PlainSocketImpl.connect(Unknown Source)
+      	at java.net.SocksSocketImpl.connect(Unknown Source)
+      	at java.net.Socket.connect(Unknown Source)
+      	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+      	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+      	... 66 more
+      [0m
+    [36mAnd [0m[36mtype americanwell web address[0m       [90m# SignUpTest.type_americanwell_web_address()[0m
+    [36mAnd [0m[36mmouse hover on Need to see a doctor[0m [90m# SignUpTest.mouse_hover_on_Need_to_see_a_doctor()[0m
+    [36mAnd [0m[36mclick on continue button[0m            [90m# SignUpTest.click_on_continue_button()[0m
+    [36mAnd [0m[36mclick on signup button[0m              [90m# SignUpTest.click_on_signup_button()[0m
+    [36mWhen [0m[36mI fill all the fields[0m              [90m# SignUpTest.i_fill_all_the_fields()[0m
+    [36mAnd [0m[36mclick on agree check button[0m         [90m# SignUpTest.click_on_agree_check_button()[0m
+    [36mThen [0m[36msuccessfully signup[0m                [90m# SignUpTest.successfully_signup()[0m
